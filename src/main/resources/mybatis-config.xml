@@ -4,18 +4,21 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
+    <properties resource="db.properties"/>
+
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
-                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://47.111.115.69:3306/MybatisDoc"/>
-                <property name="username" value="root"/>
-                <property name="password" value="86530890a"/>
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
             </dataSource>
         </environment>
     </environments>
+
     <mappers>
-        <mapper resource="blog-mapper.xml"/>
+        <package name="com.gzy.mapper"/>
     </mappers>
 </configuration>

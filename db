@@ -1,0 +1,9 @@
+CREATE database MybatisLearn DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci
+
+USE MybatisLearn;
+
+CREATE TABLE `Blog`(
+                       `id` VARCHAR(100) NOT NULL,
+                       `title` VARCHAR(40) NOT NULL,
+                       PRIMARY KEY ( `id` )
+)ENGINE=InnoDB DEFAULT CHARSET=UTF8MB4;

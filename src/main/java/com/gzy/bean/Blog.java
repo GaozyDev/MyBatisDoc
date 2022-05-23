@@ -1,4 +1,4 @@
-package com.gzy;
+package com.gzy.bean;
 
 public class Blog {
 
