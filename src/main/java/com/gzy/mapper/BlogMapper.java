@@ -18,7 +18,7 @@ public interface BlogMapper {
     @Insert("update Blog set title = #{title} where id = #{id}")
     void updateBlog(@Param("id") String id, @Param("title") String title);
 
-    @Select("SELECT * FROM Blog WHERE id = #{id}")
+    @Select("select * from Blog where id = #{id}")
     Blog queryBlog(String id);
 
     @Select("select * from Blog")
