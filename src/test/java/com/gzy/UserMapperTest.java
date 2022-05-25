@@ -13,7 +13,7 @@ import java.io.InputStream;
 import java.util.Date;
 import java.util.List;
 
-public class UserDaoTest {
+public class UserMapperTest {
 
     private SqlSession sqlSession;
     private UserMapper userMapper;
